@@ -1,6 +1,5 @@
 # Inventory
 
-
 <ul>
     <li>
         <a href="#description">Description</a>
