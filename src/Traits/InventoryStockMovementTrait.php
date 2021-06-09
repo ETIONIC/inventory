@@ -1,8 +1,8 @@
 <?php
 
-namespace Trexology\Inventory\Traits;
+namespace Etionic\Inventory\Traits;
 
-use Trexology\Inventory\Helper;
+use Etionic\Inventory\Helper;
 use Illuminate\Database\Eloquent\Model;
 
 trait InventoryStockMovementTrait

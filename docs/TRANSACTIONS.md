@@ -253,7 +253,7 @@ You also <b>can not</b> mix inventory orders with inventory holds/releasing/remo
 Transactions must be kept within their 'scope of use', and a new transaction must be created if a new operation
 needs to take place.
 
-With any method that requires a quantity, a `Trexology\Inventory\Exceptions\InvalidQuantityException` will be thrown
+With any method that requires a quantity, a `Etionic\Inventory\Exceptions\InvalidQuantityException` will be thrown
 if the quantity supplied is invalid. For example, these would all throw the above exception:
 
     $transaction->reserved('120 pieces');
@@ -261,7 +261,7 @@ if the quantity supplied is invalid. For example, these would all throw the abov
     $transaction->reserved('a120');
     $transaction->reserved('12..0');
     
-With any method that requires a removal of stock from the inventory, a `Trexology\Inventory\Exceptions\NotEnoughStockException` will
+With any method that requires a removal of stock from the inventory, a `Etionic\Inventory\Exceptions\NotEnoughStockException` will
 be thrown if the quantity supplied is over the amount inside the current stock. For example, these would all throw the above exception:
 
     $stock->put(100);
@@ -281,16 +281,16 @@ These are easy to guard against however, you can just place the transaction meth
     try
     {
         $transaction->reserve($quantity);
-    } catch(Trexology\Inventory\Exceptions\InvalidQuantityException $e)
+    } catch(Etionic\Inventory\Exceptions\InvalidQuantityException $e)
     {
         return 'Invalid quantity was supplied. Please enter a valid quantity.';
-    } catch(Trexology\Inventory\Exceptions\NotEnoughStockException $e)
+    } catch(Etionic\Inventory\Exceptions\NotEnoughStockException $e)
     {
         return "There wasn't enough stock to reserve: $quantity";
     }
 
 States can be set manually, however it's definitely not recommended. Setting a state manually may throw an
-`Trexology\Inventory\Exceptions\InvalidTransactionStateException`, if the state is not one of the constants
+`Etionic\Inventory\Exceptions\InvalidTransactionStateException`, if the state is not one of the constants
 shown above. For example:
 
     // This will fail

@@ -1,12 +1,12 @@
 <?php
 
-namespace Trexology\Inventory\Traits;
+namespace Etionic\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
-use Trexology\Inventory\Exceptions\InvalidQuantityException;
+use Etionic\Inventory\Exceptions\InvalidQuantityException;
 
 trait CommonMethodsTrait
 {

@@ -7,17 +7,17 @@ multiple cascade delete paths are present on foreign keys, and you'll need to mo
 
 Run the following command:
 
-    composer require trexology/laravel-inventory
+    composer require etionic/laravel-inventory
 
 Now perform a `composer update` on your project's source.
 
 Then insert the service provider in your `app/config/app.php` config file:
 
-    'Trexology\Inventory\InventoryServiceProvider'
+    'Etionic\Inventory\InventoryServiceProvider'
 
 If you want to customize the database tables, you can publish the migration and run it yourself:
 
-    php artisan migrate:publish trexology/laravel-inventory
+    php artisan migrate:publish etionic/laravel-inventory
 
 And then run the migration:
 
@@ -29,19 +29,19 @@ Otherwise you can run the install command:
 
 Be sure to publish the configuration if you'd like to customize inventory:
 
-    php artisan config:publish trexology/laravel-inventory
+    php artisan config:publish etionic/laravel-inventory
 
 ### Installation (Laravel 5)
 
 Run the following command:
 
-    composer require trexology/laravel-inventory
+    composer require etionic/laravel-inventory
 
 Now perform a `composer update` on your project's source.
 
 Then insert the service provider in your `config/app.php` config file: (Skip this step if you are on 5.5 and above)
 
-    'Trexology\Inventory\InventoryServiceProvider'
+    'Etionic\Inventory\InventoryServiceProvider'
 
 Either publish the assets to customize the database tables using:
 
@@ -63,7 +63,7 @@ If you don't need to create & customize your models, I've included pre-built mod
 
 If you'd like to use them you'll have include them in your use statements:
 
-    use Trexology\Inventory\Models\Inventory;
+    use Etionic\Inventory\Models\Inventory;
 
     class InventoryController extends BaseController
     {
@@ -115,7 +115,7 @@ Location:
 
 InventoryCategory:
 
-    use Trexology\Inventory\Traits\CategoryTrait;
+    use Etionic\Inventory\Traits\CategoryTrait;
     use Baum\Node;
 
     class InventoryCategory extends Node
@@ -134,7 +134,7 @@ InventoryCategory:
 
 InventorySupplier:
 
-    use Trexology\Inventory\Traits\SupplierTrait;
+    use Etionic\Inventory\Traits\SupplierTrait;
 
     class InventorySupplier extends BaseModel
     {
@@ -150,9 +150,9 @@ InventorySupplier:
 
 Inventory:
 
-    use Trexology\Inventory\Traits\AssemblyTrait;
-    use Trexology\Inventory\Traits\InventoryTrait;
-    use Trexology\Inventory\Traits\InventoryVariantTrait;
+    use Etionic\Inventory\Traits\AssemblyTrait;
+    use Etionic\Inventory\Traits\InventoryTrait;
+    use Etionic\Inventory\Traits\InventoryVariantTrait;
 
     class Inventory extends Model
     {
@@ -196,7 +196,7 @@ Inventory:
 
 InventorySku:
 
-    use Trexology\Inventory\Traits\InventorySkuTrait;
+    use Etionic\Inventory\Traits\InventorySkuTrait;
 
     class InventorySku extends Model
     {
@@ -217,7 +217,7 @@ InventorySku:
 
 InventoryStock:
 
-    use Trexology\Inventory\Traits\InventoryStockTrait;
+    use Etionic\Inventory\Traits\InventoryStockTrait;
 
     class InventoryStock extends Model
     {
@@ -257,7 +257,7 @@ InventoryStock:
 
 InventoryStockMovement:
 
-    use Trexology\Inventory\Traits\InventoryStockMovementTrait;
+    use Etionic\Inventory\Traits\InventoryStockMovementTrait;
 
     class InventoryStockMovement extends Model
     {
@@ -282,8 +282,8 @@ InventoryStockMovement:
 
 InventoryTransaction:
 
-    use Trexology\Inventory\Traits\InventoryTransactionTrait;
-    use Trexology\Inventory\Interfaces\StateableInterface;
+    use Etionic\Inventory\Traits\InventoryTransactionTrait;
+    use Etionic\Inventory\Interfaces\StateableInterface;
 
     class InventoryTransaction extends BaseModel implements StateableInterface
     {
@@ -312,7 +312,7 @@ InventoryTransaction:
 
 InventoryTransactionHistory:
 
-    use Trexology\Inventory\Traits\InventoryTransactionHistoryTrait;
+    use Etionic\Inventory\Traits\InventoryTransactionHistoryTrait;
 
     class InventoryTransactionHistory extends BaseModel
     {

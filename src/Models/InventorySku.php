@@ -1,8 +1,8 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
-use Trexology\Inventory\Traits\InventorySkuTrait;
+use Etionic\Inventory\Traits\InventorySkuTrait;
 
 class InventorySku extends BaseModel
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory\Interfaces;
+namespace Etionic\Inventory\Interfaces;
 
 /**
  * The Stateable Interface used for stateable Inventory Transaction models.

@@ -1,10 +1,10 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
-use Trexology\Inventory\Traits\AssemblyTrait;
-use Trexology\Inventory\Traits\InventoryVariantTrait;
-use Trexology\Inventory\Traits\InventoryTrait;
+use Etionic\Inventory\Traits\AssemblyTrait;
+use Etionic\Inventory\Traits\InventoryVariantTrait;
+use Etionic\Inventory\Traits\InventoryTrait;
 
 class Inventory extends BaseModel
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
-use Trexology\Inventory\Traits\InventoryStockTrait;
+use Etionic\Inventory\Traits\InventoryStockTrait;
 
 class InventoryStock extends BaseModel
 {

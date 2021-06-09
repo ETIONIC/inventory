@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory\Traits;
+namespace Etionic\Inventory\Traits;
 
 trait CategoryTrait
 {

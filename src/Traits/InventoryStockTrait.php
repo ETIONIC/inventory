@@ -1,11 +1,11 @@
 <?php
 
-namespace Trexology\Inventory\Traits;
+namespace Etionic\Inventory\Traits;
 
-use Trexology\Inventory\Exceptions\NotEnoughStockException;
-use Trexology\Inventory\Exceptions\InvalidMovementException;
-use Trexology\Inventory\Exceptions\InvalidQuantityException;
-use Trexology\Inventory\Helper;
+use Etionic\Inventory\Exceptions\NotEnoughStockException;
+use Etionic\Inventory\Exceptions\InvalidMovementException;
+use Etionic\Inventory\Exceptions\InvalidQuantityException;
+use Etionic\Inventory\Helper;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;

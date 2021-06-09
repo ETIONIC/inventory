@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory\Exceptions\Commands;
+namespace Etionic\Inventory\Exceptions\Commands;
 
 class DependencyNotFoundException extends \Exception
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Trexology\Inventory;
+namespace Etionic\Inventory;
 
-use Trexology\Inventory\Exceptions\NoUserLoggedInException;
+use Etionic\Inventory\Exceptions\NoUserLoggedInException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;

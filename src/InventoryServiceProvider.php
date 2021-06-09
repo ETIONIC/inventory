@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory;
+namespace Etionic\Inventory;
 
 use Illuminate\Support\ServiceProvider;
 

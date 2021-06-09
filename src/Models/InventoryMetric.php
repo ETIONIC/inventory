@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
 class InventoryMetric extends BaseModel
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
-use Trexology\Inventory\Traits\CategoryTrait;
+use Etionic\Inventory\Traits\CategoryTrait;
 use Baum\Node;
 
 class InventoryCategory extends Node
@@ -27,7 +27,7 @@ class InventoryCategory extends Node
      */
     public function inventories()
     {
-        return $this->hasMany('Trexology\Inventory\Models\Inventory', 'category_id', 'id');
+        return $this->hasMany('Etionic\Inventory\Models\Inventory', 'category_id', 'id');
     }
     
     /**

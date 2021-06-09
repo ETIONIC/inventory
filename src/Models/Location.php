@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
 use Baum\Node;
 
@@ -21,5 +21,25 @@ class Location extends Node
     public function stocks()
     {
         return $this->hasMany(InventoryStock::class, 'location_id', 'id');
+    }
+
+    /**
+     * Override the "default" left column name.
+     *
+     * @return string
+     */
+    public function getDefaultLeftColumnName()
+    {
+      return 'lft';
+    }
+
+    /**
+     * Override the "default" right column name.
+     *
+     * @return string
+     */
+    public function getDefaultRightColumnName()
+    {
+        return 'rgt';
     }
 }

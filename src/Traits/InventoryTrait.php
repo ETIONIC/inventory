@@ -1,11 +1,11 @@
 <?php
 
-namespace Trexology\Inventory\Traits;
+namespace Etionic\Inventory\Traits;
 
-use Trexology\Inventory\Exceptions\SkuAlreadyExistsException;
-use Trexology\Inventory\Exceptions\StockNotFoundException;
-use Trexology\Inventory\Exceptions\StockAlreadyExistsException;
-use Trexology\Inventory\Helper;
+use Etionic\Inventory\Exceptions\SkuAlreadyExistsException;
+use Etionic\Inventory\Exceptions\StockNotFoundException;
+use Etionic\Inventory\Exceptions\StockAlreadyExistsException;
+use Etionic\Inventory\Helper;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;
@@ -208,7 +208,7 @@ trait InventoryTrait
      *
      * @throws StockAlreadyExistsException
      * @throws StockNotFoundException
-     * @throws \Trexology\Inventory\Exceptions\NoUserLoggedInException
+     * @throws \Etionic\Inventory\Exceptions\NoUserLoggedInException
      *
      * @return Model
      */

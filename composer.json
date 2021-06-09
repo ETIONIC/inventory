@@ -1,5 +1,5 @@
 {
-    "name": "trexology/laravel-inventory",
+    "name": "etionic/laravel-inventory",
     "description": "Inventory management using Laravel 4 / 5",
     "keywords": ["laravel", "inventory", "inventory-management"],
     "authors": [
@@ -11,8 +11,8 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
-        "illuminate/database": "5.*|^6.0",
-        "illuminate/support": "5.*|^6.0",
+        "illuminate/database": "5.*|^6.0|^7.0|^8.0",
+        "illuminate/support": "5.*|^6.0|^7.0|^8.0",
         "baum/baum": "^2.0@alpha"
     },
     "require-dev": {
@@ -23,20 +23,20 @@
     },
     "autoload": {
         "psr-4": {
-            "Trexology\\Inventory\\": "src/"
+            "Etionic\\Inventory\\": "src/"
         }
     },
     "autoload-dev":
     {
         "psr-4": {
-            "Trexology\\Inventory\\Tests\\": "tests/"
+            "Etionic\\Inventory\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
       "laravel": {
         "providers": [
-          "Trexology\\Inventory\\InventoryServiceProvider"
+          "Etionic\\Inventory\\InventoryServiceProvider"
         ],
         "aliases": {
         }

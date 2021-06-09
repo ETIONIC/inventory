@@ -1,9 +1,9 @@
 <?php
 
-namespace Trexology\Inventory\Models;
+namespace Etionic\Inventory\Models;
 
-use Trexology\Inventory\Traits\InventoryTransactionTrait;
-use Trexology\Inventory\Interfaces\StateableInterface;
+use Etionic\Inventory\Traits\InventoryTransactionTrait;
+use Etionic\Inventory\Interfaces\StateableInterface;
 
 class InventoryTransaction extends BaseModel implements StateableInterface
 {

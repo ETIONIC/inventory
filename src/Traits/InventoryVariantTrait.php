@@ -1,6 +1,6 @@
 <?php
 
-namespace Trexology\Inventory\Traits;
+namespace Etionic\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 
