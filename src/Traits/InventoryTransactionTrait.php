@@ -1178,7 +1178,7 @@ trait InventoryTransactionTrait
      *
      * @return bool
      */
-    protected function validatePreviousState($allowedStates = [], $toState)
+    protected function validatePreviousState($allowedStates, $toState)
     {
         $state = $this->getAttribute('state');
 
